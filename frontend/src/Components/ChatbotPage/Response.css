@@ -1,0 +1,15 @@
+#response-col textarea {
+  flex: 1;
+  width: 800px;
+  height: 50vh;
+  outline: none;
+  padding: 10px;
+  /* border: none; */
+  resize: none;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-radius: 12px;
+}

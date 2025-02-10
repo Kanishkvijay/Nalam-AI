@@ -1,0 +1,76 @@
+#Searchbar-row {
+  width: 725px;
+  /* margin: 20px auto; */
+  padding: 12px 12px 0;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: linear 0.25s;
+  box-sizing: border-box;
+}
+@media (max-width: 425px) {
+  #Searchbar-row {
+    width: 350px;
+  }
+}
+#Searchbar-row:hover {
+  box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.151);
+}
+#searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+#searchbar textarea {
+  flex: 1;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: none;
+  resize: none;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+#searchbar textarea::-webkit-scrollbar {
+  display: none;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+#searchbar button {
+  border: none;
+  background-color: white;
+}
+#searchbar-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0 12px;
+}
+#searchbar-options #upload {
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 13px;
+  padding: 3px 6px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+#searchbar-options #upload:hover {
+  background-color: rgba(128, 128, 128, 0.205);
+  border-radius: 50px;
+}
+#searchbar-options #upload span {
+  margin-right: 5px;
+}
